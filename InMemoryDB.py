@@ -5,7 +5,7 @@ class InMemoryDB:
         self.transaction = False
 
     def get(self, key):
-        print(self.database.get(key, None))
+        return self.database.get(key, None)
 
     def put(self, key, val):
         if self.transaction:
